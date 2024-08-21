@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr); 
+    gap: 20px; 
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: #7e87b1;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+a {
+    color: #00f;
+    text-decoration: none;
+}
+
+  p{
+    text-align: center;
+    font-size: larger;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .image-container {
+  position: relative;
+  width: 80%;
+  max-width: 10px;
+  margin: auto;
+}
+
+.image-container img {
+  width: 10%;
+  height: 45px;
+  display: block;
+}
+
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+</style>
+<body>
+    <section class="heading">
+        <div class="image_container">
+        <img src="expert doctor .png" alt="Background Image">
+    </section>
+    <div>
+        <p>
+            Our Clinical and Specialist Advisory Panel (CSAP) is a group of leading global experts, 
+            representing interdisciplinary fields of cardiovascular disease, who support the Global Heart Hub 
+            in helping to ensure that evidence-based knowledge underlies our efforts to achieve the best 
+            possible outcomes for those living with heart diseases.
+        </p>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <p>Dr. Kumar Gaurav Behera</p>
+            <p>DM - Cardiology, MBBS
+                Interventional Cardiologist,Cardiologist
+                8 Years Experience Overall  (7 years as specialist)</p>
+            <p><a href="tel:080 3729 8720">080 3729 8720</a></p>
+        </div>
+        <div class="grid-item">
+            <p>Dr. Soumya Ranjan Mahapatra</p>
+            <p>DM - Cardiology, MBBS
+                Cardiologist,Interventional Cardiologist
+                7 Years Experience Overall  (6 years as specialist)</p>
+            <p><a href="tel:080 3729 8720">080 3729 8720</a></p>
+        </div>
+        <div class="grid-item">
+            <p>Dr. Sarat Kumar Sahoo</p>
+            <p>MBBS- V.S.S Medical College, Burla. MD (Medicine)- 
+                M.K.C.G Medical College, Berhampur. DM(Cardiology)- 
+                S.C.B Medical College, Cuttack. Senior Consultant Interventional Cardiologist.</p>
+            <p><a href="tel:080 3729 8720">080 3729 8720</a></p>
+        </div>
+        <div class="grid-item">
+            <p>Dr. Vibhutendra Mohanty</p>
+            <p>MBBS- MKCG Medical College & Hospital, MD(General Medicine)- 
+                S.C.B Medical College & Hospital, DM( Cardiology)</p>
+            <p><a href="tel:080 3729 8720">080 3729 8720</a></p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Heart Disease Diagnosis. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disease Diagnosis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  
+    body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.6;
+    background-color:#faf7f7;
+    color: #333;
+  }
+  .left {
+        display: inline-block;
+        position: absolute;
+        left: 40px;
+        top: 10px;
+    }
+
+    .left img {
+        background-color: rgb(96, 18, 51);
+        width: 88px;
+        
+   }
+   
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  header {
+    background-color: rgb(96, 18, 51);
+    color: #fff;
+    padding-top: 12px;
+    overflow: hidden;
+  }
+  
+  header h1 {
+    float: left;
+    margin-left: 20px;
+  }
+  
+  nav ul {
+    float: right;
+    list-style: none;
+    margin-right: 20px;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-left: 20px;
+    font-size: large;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+  
+  .hero {
+    
+    color: #fff;
+    text-align: center;
+   
+  }
+  .image-container {
+  position: relative;
+  width: 100%;
+  max-width: 100px;
+  margin: auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: 45px;
+  display: block;
+}
+.overlay-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  
+}
+
+.overlay-text h2 {
+  margin: 0;
+  font-size: 40px;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+}
+  
+  .hero h2 {
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    margin-bottom: 30px;
+    color: black;
+  }
+  .hero a{
+    background-color: rgb(96, 18, 51);
+    padding: 8px;
+    border-radius: 15px;
+    color: white;
+   
+  }
+  
+  .services {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .services h2{
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .services h3 {
+    font-size: large;
+
+  }
+  
+  .service p{
+    color: #0a0a0a;
+    text-decoration: none;
+    font-size: medium;
+  }
+  .service p:hover{
+    color: #302e2e;
+    text-decoration: underline;
+  }
+
+  .service {
+    margin-bottom: 30px;
+  }
+  
+  .service img {
+    width: 300px;
+    height: 200px;
+    border: 50%;
+  }
+  
+  .learn.hover{
+    color: #fff;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+</style>
+<body>
+  <header>
+    <div class="left">
+    <img src="logo-removebg-preview.png" alt="">
+    <!--<div>Heart Disease Diagnosis</div>-->
+  </div>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#" >Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Model.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="image_container">
+    <img src="front_logo.jpg" alt="Background Image">
+    <div class="overlay-text">
+      <h2>Welcome to our Heart Disease Diagnosis Website</h2>
+      <p>Get accurate and reliable diagnosis for various models with our advanced tools and expert medical professionals.</p>
+      <a href="Model.html" class="btn">Get Started</a>
+    </div>
+  </div>
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service">
+      <img src="heart diagnosis model.png" alt="Service 1">
+      <h3>Diagnostic Models</h3>
+      <a href="Model.html" class="btn">
+      <p>Utilize our state-of-the-art diagnostic tools for precise disease identification.</p>
+    </a>
+    </div>
+    <div class="service">
+      <img src="patient-talking-to-doctor.jpg" alt="Service 2">
+      <h3>Expert Consultation</h3>
+      <a href="expert.html">
+      <p>Consult with our experienced medical professionals for personalized guidance and treatment plans.</p>
+      </a>
+    </div>
+    <div class="service">
+      <img src="heart prevention.jpg" alt="Service 3">
+      <h3>Prevent Heart Disease</h3>
+      <div class="learn">
+      <a href="prevention.html" class="btn">
+        <p>Learn what can you do to lower your risk and manage conditions that lead to heart disease.</p>
+      </a>
+    </div>
+    </div>
+  </section>
+
+  
+
+  <footer>
+    <p>&copy; 2024 Heart Disease Diagnosis. All rights reserved.</p>
+  </footer>
+</body>
+</html>

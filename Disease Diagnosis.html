@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/front.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disease Diagnosis</title>
+  <link rel="stylesheet" href="./Disease Diagnosis_files/styles.css">
+<style>
+    {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+  }
+  
+    body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding-top: 20px;
+    overflow: hidden;
+  }
+  
+  header h1 {
+    float: left;
+    margin-left: 20px;
+  }
+  
+  nav ul {
+    float: right;
+    list-style: none;
+    margin-right: 20px;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+  
+  .hero {
+    background: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .hero h2 {
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    margin-bottom: 30px;
+  }
+  
+  .services {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .service {
+    margin-bottom: 30px;
+  }
+  
+  .service img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+</style></head>
+
+<body>
+  <header>
+    <h1>Heart Disease Diagnosis</h1>
+    <nav>
+      <ul class="navbar">
+        <li><a href="http://127.0.0.1:5500/front.html#" class="active">Home</a></li>
+        <li><a href="http://127.0.0.1:5500/front.html#">About</a></li>
+        <li><a href="http://127.0.0.1:5500/front.html#">Services</a></li>
+        <li><a href="http://127.0.0.1:5500/front.html#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to our Heart Disease Diagnosis Website</h2>
+    <p>Get accurate and reliable diagnosis for various models with our advanced tools and expert medical professionals.</p>
+    <a href="http://127.0.0.1:5500/front.html#" class="btn">Get Started</a>
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service">
+      <img src="./Disease Diagnosis_files/heart diagnosis model.png" alt="Service 1">
+      <h3>Diagnostic Models</h3>
+      <p>Utilize our state-of-the-art diagnostic tools for precise disease identification.</p>
+    </div>
+    <div class="service">
+      <img src="./Disease Diagnosis_files/patient-talking-to-doctor.jpg" alt="Service 2">
+      <h3>Expert Consultation</h3>
+      <p>Consult with our experienced medical professionals for personalized guidance and treatment plans.</p>
+    </div>
+    <div class="service">
+      <img src="./Disease Diagnosis_files/heart disease prevention.jpeg" alt="Service 3">
+      <h3>Prevent Heart Disease</h3>
+      <p>Learn what can you do to lower your risk and manage conditions that lead to heart disease.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2024 Disease Diagnosis. All rights reserved.</p>
+  </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
